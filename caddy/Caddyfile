@@ -1,0 +1,14 @@
+it-tools.local.hue-dev.top:80 {
+	reverse_proxy ittools:80
+	#reverse_proxy localhost:8081
+}
+
+s.local.hue-dev.top:80 {
+	reverse_proxy shlink:8080
+	#reverse_proxy localhost:8080
+}
+
+s-ui.local.hue-dev.top:80 {
+	reverse_proxy shlink-web-client:8080
+	#reverse_proxy localhost:8000
+}

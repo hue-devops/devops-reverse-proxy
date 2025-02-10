@@ -1,0 +1,37 @@
+services:
+  # https://github.com/CorentinTh/it-tools
+  # http://localhost:8081
+  ittools:
+    image: corentinth/it-tools:2024.10.22-7ca5933
+    container_name: ittools
+    ports:
+      - 127.0.0.1:8081:80
+
+  # https://github.com/shlinkio/shlink
+  shlink:
+    image: shlinkio/shlink:4.4.2-roadrunner
+    container_name: shlink
+    environment:
+      DEFAULT_DOMAIN: s.local.hue-dev.top
+      INITIAL_API_KEY: 6aeb82c6-e275-4538-a747-31f9abfba63c
+      IS_HTTPS_ENABLED: false
+    ports:
+      - 127.0.0.1:8080:8080
+    volumes:
+      - shlink_data:/etc/shlink/data
+  shlink-web-client:
+    image: shlinkio/shlink-web-client:4.3.0
+    container_name: shlink-web-client
+    environment:
+      SHLINK_SERVER_API_KEY: 6aeb82c6-e275-4538-a747-31f9abfba63c
+      SHLINK_SERVER_URL: http://s.local.hue-dev.top
+    ports:
+      - 127.0.0.1:8000:8080
+
+networks:
+  default:
+    external: true
+    name: devops-reverse-proxy
+
+volumes:
+  shlink_data:

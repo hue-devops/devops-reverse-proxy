@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram name="Page-1" id="HRSc-lsgZOE0w1776n3y">
+    <mxGraphModel dx="1425" dy="951" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UJIS0p4MZoL804rgJj1f-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="85" y="280" width="680" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-2" value="Host" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.308;exitY=0.967;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="UJIS0p4MZoL804rgJj1f-3" target="UJIS0p4MZoL804rgJj1f-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UJIS0p4MZoL804rgJj1f-3" target="UJIS0p4MZoL804rgJj1f-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-3" value="reverse proxy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-4" value="it-tools" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-5" value="short urls" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UJIS0p4MZoL804rgJj1f-8" target="UJIS0p4MZoL804rgJj1f-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-10" value="request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UJIS0p4MZoL804rgJj1f-9">
+          <mxGeometry x="-0.2842" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UJIS0p4MZoL804rgJj1f-8" value="User" style="shape=umlActor;verticalLabelPosition=top;verticalAlign=bottom;html=1;outlineConnect=0;labelPosition=center;align=center;" vertex="1" parent="1">
+          <mxGeometry x="410" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

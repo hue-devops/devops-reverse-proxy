@@ -1,0 +1,24 @@
+services:
+  npm:
+    # https://nginxproxymanager.com/
+    image: jc21/nginx-proxy-manager:2.12.3
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+      - 127.0.0.1:81:81
+    environment:
+      INITIAL_ADMIN_EMAIL: admin@example.com
+      INITIAL_ADMIN_PASSWORD: changeme
+    volumes:
+      - npm_data:/data
+      - npm_letsencrypt:/etc/letsencrypt
+
+networks:
+  default:
+    external: true
+    name: devops-reverse-proxy
+
+volumes:
+  npm_data:
+  npm_letsencrypt:
